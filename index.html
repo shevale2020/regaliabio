@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalia Bio | Under Construction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #0b132b;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Subtle glowing background elements */
+        .bg-glow {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(0, 242, 254, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+            top: 10%;
+            left: 15%;
+            z-index: 0;
+            border-radius: 50%;
+        }
+
+        .bg-glow-2 {
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, rgba(79, 172, 254, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+            bottom: 5%;
+            right: 10%;
+            z-index: 0;
+            border-radius: 50%;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        /* Biotechnology SVG Illustration */
+        .bio-image-container {
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto 30px auto;
+        }
+
+        .bio-image-container svg {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0px 10px 15px rgba(0, 242, 254, 0.2));
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: #a0aec0;
+            line-height: 1.6;
+            max-width: 550px;
+            margin: 0 auto 30px auto;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 242, 254, 0.1);
+            border: 1px solid rgba(0, 242, 254, 0.3);
+            color: #00f2fe;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .badge-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #00f2fe;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #00f2fe;
+            animation: pulse 1.8s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.4; transform: scale(0.9); }
+            50% { opacity: 1; transform: scale(1.2); }
+            100% { opacity: 0.4; transform: scale(0.9); }
+        }
+
+        .footer {
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: #718096;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
+
+            .logo {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+
+    <div class="container">
+        
+        <div class="logo">Regalia Bio</div>
+
+        <div class="badge">
+            <span class="badge-dot"></span>
+            Under Construction
+        </div>
+
+        <!-- Biotechnology Vector Graphic (DNA & Bio Molecule) -->
+        <div class="bio-image-container">
+            <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background Grid Circle -->
+                <circle cx="200" cy="150" r="110" stroke="rgba(0, 242, 254, 0.15)" stroke-width="2" stroke-dasharray="4 4" />
+                
+                <!-- DNA Helix Strands -->
+                <path d="M 120 70 C 160 110, 240 110, 280 70" stroke="#00f2fe" stroke-width="4" stroke-linecap="round"/>
+                <path d="M 120 120 C 160 80, 240 80, 280 120" stroke="#4facfe" stroke-width="4" stroke-linecap="round"/>
+                <path d="M 120 170 C 160 210, 240 210, 280 170" stroke="#00f2fe" stroke-width="4" stroke-linecap="round"/>
+                <path d="M 120 220 C 160 180, 240 180, 280 220" stroke="#4facfe" stroke-width="4" stroke-linecap="round"/>
+
+                <!-- Helix Base Pair Connectors -->
+                <line x1="160" y1="95" x2="160" y2="95" stroke="rgba(255,255,255,0.4)" stroke-width="3"/>
+                <line x1="200" y1="100" x2="200" y2="100" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
+                <line x1="240" y1="95" x2="240" y2="95" stroke="rgba(255,255,255,0.4)" stroke-width="3"/>
+
+                <line x1="160" y1="195" x2="160" y2="195" stroke="rgba(255,255,255,0.4)" stroke-width="3"/>
+                <line x1="200" y1="190" x2="200" y2="190" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
+                <line x1="240" y1="195" x2="240" y2="195" stroke="rgba(255,255,255,0.4)" stroke-width="3"/>
+
+                <!-- Glowing Molecular Nodes -->
+                <circle cx="120" cy="70" r="7" fill="#00f2fe"/>
+                <circle cx="280" cy="70" r="7" fill="#00f2fe"/>
+                <circle cx="120" cy="120" r="7" fill="#4facfe"/>
+                <circle cx="280" cy="120" r="7" fill="#4facfe"/>
+                <circle cx="120" cy="170" r="7" fill="#00f2fe"/>
+                <circle cx="280" cy="170" r="7" fill="#00f2fe"/>
+                <circle cx="120" cy="220" r="7" fill="#4facfe"/>
+                <circle cx="280" cy="220" r="7" fill="#4facfe"/>
+
+                <!-- Central Flask Silhouette -->
+                <path d="M 185 110 L 215 110 L 215 130 L 240 185 C 245 195 238 205 225 205 L 175 205 C 162 205 155 195 160 185 L 185 130 Z" fill="rgba(0, 242, 254, 0.08)" stroke="#00f2fe" stroke-width="2.5"/>
+                <path d="M 167 170 C 180 165, 220 175, 233 170 L 238 185 C 242 193 236 200 225 200 L 175 200 C 164 200 158 193 162 185 Z" fill="rgba(0, 242, 254, 0.3)"/>
+                
+                <!-- Bubbles -->
+                <circle cx="195" cy="155" r="3" fill="#ffffff" opacity="0.8"/>
+                <circle cx="205" cy="145" r="2" fill="#ffffff" opacity="0.6"/>
+                <circle cx="198" cy="135" r="2.5" fill="#ffffff" opacity="0.7"/>
+            </svg>
+        </div>
+
+        <h1>Something Innovative is Brewing</h1>
+        <p>Our website is currently undergoing planned maintenance and upgrades. We are preparing our digital space to showcase our latest biotechnology advancements.</p>
+
+        <div class="footer">
+            &copy; <script>document.write(new Date().getFullYear())</script> Regalia Bio. All rights reserved.
+        </div>
+
+    </div>
+
+</body>
+</html>
